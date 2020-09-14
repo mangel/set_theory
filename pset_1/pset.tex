@@ -1,48 +1,76 @@
 \documentclass{article}
-
-\usepackage{amsmath}
-\usepackage{amsthm}
-\usepackage{amsrefs}
-\usepackage{amssymb}
-\usepackage[margin=0.5in]{geometry}
-\usepackage[spanish, mexico]{babel}
 \usepackage[utf8]{inputenc}
 
-\title{Taller 1: Teoría de conjuntos}
-\author{Miguel Angel Gomez}
+\title{Taller 1 - AXIOMAS - Sección 2.2}
+\author{Leidy Sánchez 614181008, \\ Miguel Gómez 614171001,\\ César Lara 614181009.}
+\date{September 2020}
 
 \begin{document}
-\maketitle
-\paragraph{2} Indique cuáles de las siguientes expresiones son falsas:
-\paragraph{a)} $A = \{ A \}$. Falsa, esta construcción es similar a la pradoja de Russel y por ende es inadmisible.
-\paragraph{b)} $\{ a, b \} = \{ \{a\}, \{b\} \}$. Falsa, por el Axioma de extensión, diremos que $A$ es el miembro izquierdo de la igualdad y $B$ el derecho, tomando el primer elemento, vemos que $\{a\} \notin A$ por ende $A \neq B$ y por tanto la proposición es falsa.
-\paragraph{c)} $\emptyset \in \{\emptyset\}$ . Verdadera, vemos que el conjunto al que se hace refrencia sólo 'contiene el elemento vacío' el cual como vemos pertenece al conjunto.
-\paragraph{4} Pruebe que para cualquier conjunto $X$ hay algún $a \notin X$.
-\paragraph{} Dado que el conjunto existe, tenemos dos casos, si es vacío o si no lo es. Si es vacío, la proposición se cumple para cualquier conjunto que tenga elementos diferentes al vacío. Si el conjunto $X$ no es vacio por lo tanto existe al menos un $x \in X$, y por el axioma del par, existe un conjunto $C$ para el cual sus elementos están contenidos entre el conjunto $X$ y un conjunto $B$, si $B$ es un conjunto no vacío y $B \neq X$ se cumplirá que existe un $x \in C$ y que $x \notin X$.
-\paragraph{6} Pruebe $\bigcup\emptyset = \emptyset$.
-\paragraph{} Por el axioma de extensión se debe satisfacer que los elementos de $\bigcup \emptyset$ son los mismos elementos del conjunto $\emptyset$, supongamos lo opuesto, y que los conjuntos son diferentes y por ende la unión del conjunto $\emptyset$ contendría elementos, lo cual contradice su definición, proceder desde el conjunto vacío nos lleva a la misma contraddición por lo tanto la proposición debe ser verdadera.
-\paragraph{8} Sean $A$ y $B$ conjuntos. Muestre que existe un único conjunto $C$ tal que $x \in C$ si y sólo si ($x \in A$ y $x \notin B $) o ($x \in B$ y $x \notin A $).
-\paragraph{} Si $A$ es un conjunto vacío y $B$ no, la construcción de $C$ implicaría que $C=B$ por el axioma de extensión de igual manera si asumieramos que $B$ es el conjunto vacío, si suponemos que $C \neq B$ ello implicaría que $A$ tiene elementos lo cual contradice nuestra premisa y por tanto el conjunto es único; si $A=B$, $C$ sería el conjunto vacio, dado que su construcción serían los elementos que satisfacen ($x \in A$) y ($x \notin A$) lo cual como vemos es el conjunto vacío, que de antemano sabemos que es único; si $A \neq B$ y ambos no vacíos, existiran al menos dos elementos, uno que satisface ($A(x): x \in A \land x \notin B$) y otro que satisface ($B(x): x \in B \land x \notin A$), lo anterior por una combinación entre el axioma esquema de comprensión y el axioma del par. Nos resta demostrar que en este caso el conjunto será único, para ello procederemos de la misma manera del principio, supongamos que existe otro conjunto que satisface la misma construcción de $C$ y que llamaremos $D$ tal que $C \neq D$, si existe un $x \in D$ tal que $x \notin C$ ello implicaría que este elemento no se encuentra en $A$ o en $B$ lo cual contradice la construcción de $D$ por ende todo elemento contenido en $D$ también se encuentra contenido en $C$ y por tanto por el axioma de extensión necesariamente $C=D$ y por lo tanto es único.
-\paragraph{10}
-\paragraph{a)} Muestre que para cualesquiera conjuntos $A, B$ y $C$ existe un único conjunto $P$ tal que $x \in P$ si y sólo si  $x = A$ o $x = B$ o $x = C$.
-\paragraph{b} Generalice (a) para cuatro o más elementos.
-\paragraph{12} Verifique las  afirmaciones de los ejemplos 2.18, 2.19, 2.20.
-\paragraph{Ejemplo 2.18}
-\paragraph{Ejemplo 2.19}
-\paragraph{Ejemplo 2.20}
-\paragraph{14} Demuestre que si $A \subseteq B$ entonces $\mathcal{P}(A) \subseteq \mathcal{P}(B)$.
-\paragraph{} supongamos que existe un $x \in \mathcal{P}(A)$, por definición del conjunto potencia $x \in A$ y como $A \subseteq B$, por definición $x \in B$ y por ende también en $x \in \mathcal{P}(B)$, por lo tanto $\mathcal{P}(A) \subseteq \mathcal{P}(B)$.
-\paragraph{16} Complete la demostración del teorema 2.33(b)
-\paragraph{Teorema 2.33}
-\paragraph{18}
-\paragraph{a)} Demuestre que para cualquier conjunto $X$ es falso que $\mathcal{P}(X) \subseteq X$. En particular $X \neq \mathcal{P}(X)$.
-\paragraph{b)} Demuestre que el conjunto de todos los conjuntos no existe usando el insiso (a).
-\paragraph{20} El axioma de unión, el axioma del par, el axioma del conjunto potencia pueden reemplazarse por las siguientes versiones más débiles:
-\paragraph{Axioma débil del par.} Para cualesquiera $a, b$ existe un conjunto $C$ tal que $a \in C$ y $b \in C$.
-\paragraph{Axioma débil de Unión.} Para cualquier conjunto $S$ existe un conjunto $U$ tal que si $x \in A$ y $A \in S$ entonces $x \in U$.
-\paragraph{Axioma débil del conjunto potencia.} Para cualquier conjunto $S$ existe un conjunto $P$ tal que $X \subseteq S$ implica $X \in P$.
-\paragraph{} Deduzca el axioma del par, el axioma de la unión y el axioma del conjunto potencia usando las versiones débiles. (Sugerencia: use el axioma esquema de comprensión).
-\paragraph{Deducción del axioma del par.}
-\paragraph{Deducción del axioma de la unión.}
-\paragraph{Deducción del axioma del conjunto potencia.}
+	\maketitle
+	\paragraph{2} Indique cuáles de las siguientes expresiones son falsas:
+	\paragraph{a)} $A = \{ A \}$. Falsa, el lado izquierdo es un conjunto $A$, mientras que el lado izquierdo es el conjunto unitario $\{A\}$ y ambos son cosas estrictamente diferentes.
+	\paragraph{b)} $\{ a, b \} = \{ \{a\}, \{b\} \}$. Falsa, por el Axioma de extensión, diremos que $A$ es el miembro izquierdo de la igualdad y $B$ el derecho, tomando el primer elemento, vemos que $\{a\} \notin A$ por ende $A \neq B$ y por tanto la proposición es falsa.
+	\paragraph{c)} $\emptyset \in \{\emptyset\}$ . Verdadera, vemos que el conjunto al que se hace refrencia sólo 'contiene el elemento vacío' el cual como vemos pertenece al conjunto.
+	\paragraph{4} Pruebe que para cualquier conjunto $X$ hay algún $a \notin X$.
+	\paragraph{} Dado que el conjunto existe, tenemos dos casos, si es vacío o si no lo es. Si es vacío, la proposición se cumple para cualquier conjunto que tenga elementos diferentes al vacío. Si el conjunto $X$ no es vacio por lo tanto existe al menos un $x \in X$, y por el axioma del par, existe un conjunto $C$ para el cual sus elementos preovienen de un conjunto $X$ o un conjunto $B$, si $B$ es un conjunto no vacío y $B \neq X$ se cumplirá que existe un $x \in C$ y que $x \notin X$.
+	\paragraph{6} Pruebe $\bigcup\emptyset = \emptyset$.
+	\paragraph{} Por el axioma de extensión se debe satisfacer que los elementos de $\bigcup \emptyset$ son los mismos elementos del conjunto $\emptyset$, supongamos lo opuesto, y que los conjuntos son diferentes y por ende la unión del conjunto $\emptyset$ contendría elementos, lo cual contradice su definición, proceder desde el conjunto vacío nos lleva a la misma contradición por lo tanto la proposición debe ser verdadera.
+	\paragraph{8} Sean $A$ y $B$ conjuntos. Muestre que existe un único conjunto $C$ tal que $x \in C$ si y sólo si ($x \in A$ y $x \notin B $) o ($x \in B$ y $x \notin A $).
+	\paragraph{} Si $A$ es un conjunto vacío y $B$ no, la construcción de $C$ implicaría que $C=B$ por el axioma de extensión de igual manera si asumieramos que $B$ es el conjunto vacío, si suponemos que $C \neq B$ ello implicaría que $A$ tiene elementos lo cual contradice nuestra premisa y por tanto el conjunto es único; si $A=B$, $C$ sería el conjunto vacio, dado que su construcción serían los elementos que satisfacen ($x \in A$) y ($x \notin A$) lo cual como vemos es el conjunto vacío, que de antemano sabemos que es único; si $A \neq B$ y ambos no vacíos, existiran al menos dos elementos, uno que satisface ($A(x): x \in A \land x \notin B$) y otro que satisface ($B(x): x \in B \land x \notin A$), lo anterior por una combinación entre el axioma esquema de comprensión y el axioma del par. Nos resta demostrar que en este caso el conjunto será único, para ello procederemos de la misma manera del principio, supongamos que existe otro conjunto que satisface la misma construcción de $C$ y que llamaremos $D$ tal que $C \neq D$, si existe un $x \in D$ tal que $x \notin C$ ello implicaría que este elemento no se encuentra en $A$ o en $B$ lo cual contradice la construcción de $D$ por ende todo elemento contenido en $D$ también se encuentra contenido en $C$ y por tanto por el axioma de extensión necesariamente $C=D$ y por lo tanto es único.
+	\paragraph{10.a)} Muestre que para cualesquiera conjuntos $A, B$ y $C$ existe un único conjunto $P$ tal que $x \in P$ si y sólo si  $x = A$ o $x = B$ o $x = C$.
+	\paragraph{} Por el axioma del par podemos elegir siempre una pareja de elementos tal que existirá un conjunto único digamos $P_1$ que satisface el axioma del par, por el mismo axioma podemos repetir el anterior añadiendo  una condición mediante el axioma esquema de comprensión tal que los elementos satisfacen pertenecer a $P_1$ o ser igual al elemento que se excluyo la primera vez, y que mediante el axioma del par definimos como $P_1$, a este conjunto le llamaremos $P_2$ ahora solo nos resta garantizar su unicidad, nótese que por el axioma del esquema de comprensión si un conjunto $P'$ satisface esto con los mismos elementos, por el axioma de extensión podemos afirmar que $P_2 = P'$.
+	\paragraph{(10.b)}  Generalice (a) para cuatro o más elementos.
+	\paragraph{} Continuando con la demostración del inciso (a), por el axioma del par supondremos que existen una serie de concuntos $A_n$, por ende es posible construir una serie de conjuntos $M$ que satisfacen el axioma del par y el axioma esquema de comprensión:
+	$$M_1 = \{x: x = A_1 \lor x = A_2\},$$
+	$$M_2 = \{x: x = A_2 \lor x \in M_1\},$$
+	$$\dots,$$
+	$$M_n = \{x: x = A_n \lor x \in M_{n-1}\},$$
+	y por la demostración del inciso anterior podemos definir un conjunto $M_{n+1} = \{x: x = A_{n+1} \lor x \in M_{n}\}$, que como vemos es el axioma el par y el axioma de esquema de comprensión nuevamente y por tanto el conjunto esta bien definido. Resta verificar que este conjunto es único, procederemos de igual manera como en (a), suponga que existe un conjunto $M$ que satisface $(S_n(x):x = A_n \lor x \in M_n)$, vemos portanto que al satisfacer esta condición, támbién se satisface para todo $x \in A_n$ y que son los elementos que hacen parte de algún $M_n$, por ello si algún $x \in M$, como $S(x)$ se satisface en algún $x \in M$, $x \in M_{n+1}$ y viceversa, luego necesariamente $M_{n+1} = M$ por el axioma de extensión el conjunto es el mismo y por tanto es único.
+	\paragraph{12} Verifique las  afirmaciones de los ejemplos 2.18, 2.19, 2.20.
+	\paragraph{Ejemplo 2.18} $x \in A$ si y sólo si $\{x\} \subseteq A$.
+	\paragraph{} Supongamos que no, que $x \in A$ y que $\{x\} \not \subseteq A$, ello implica que el elemento $x \in \{x\}$ no hace parte de $A$; asumiendo que $x \notin A$ y que $\{x\} \subseteq A$ obtenemos el mismo resultado, en ambos casos llegamos a una contradicción de modo que si $x \in A$, es condición necesaria y suficiente que $\{x\} \subseteq A.$
+	\paragraph{Ejemplo 2.19} $\{\emptyset\} \subseteq A$ y $A \subseteq A$ para todo conjunto $A$.
+	\paragraph{$\{\emptyset\} \subseteq A$.} Suponga que no es así, que en $\emptyset$ hay algún $x \notin A$, ello es un contradicción dado que el vacío no tiene elementos, por lo tanto la proposición es verdadera. 
+	\paragraph{$A \subseteq A$.} Por definición del axioma de extensión si $x \in B$ tal que $B \subseteq A$, necesariamente $x \in A$, ahora suponga que todos los elementos $x \in B$ no pertenecen a $A$, ello implica que $B \neq A$ (por el axioma de extensión) dado que $x \in A$ y que no existe en $B$, sin embargo, si para todo  $x \in B \subseteq A$, por definición, también $x \in A$ y por el axioma de extensión $B = A$, luego la proposición incial se puede rescribir como $B \subseteq A \equiv A \subseteq A$.
+	\paragraph{Ejemplo 2.20} Para cualesquiera conjuntos $A,B,C$ tales que $A \subseteq B$ y $B \subseteq C$ se tiene $A \subseteq C$:
+	Por hipótesis $A \subseteq B$. Sea $x$ un elemento cualquiera de $A$, con lo cual se satisface que, $x \in A$ implica  $x \in B$.
+	Por otro lado, se tiene por hipótesis que $B \subseteq C$, lo cual implica que para un elemento $x$, con $x \in B$ implica  $x \in C$. Entonces por silogismo hipotético, $x \in A$ implica $x \in C$.
+	Por definición de contenencia de conjuntos $A \subseteq C$. 
+	\paragraph{14} Demuestre que si $A \subseteq B$ entonces $\mathcal{P}(A) \subseteq \mathcal{P}(B)$.
+	\paragraph{} Por definición del conjunto potencia $A \in \mathcal{P}(A)$, y como $A \subseteq B$ y $B \subseteq \mathcal{P}(B)$, para todo $A_n \in \mathcal{P}(A)$, $A_n \subseteq B$ y por lo tanto $A_n \in \mathcal{P}(B)$ y por ende $\mathcal{P}(A) \subseteq \mathcal{P}(B)$.
+	\paragraph{16} Complete la demostración del teorema 2.33(b)
+	\paragraph{Teorema 2.33}
+	\paragraph{a}Ningún conjunto no vacío puede ser elemento de si mismo, es decir para cualquier $X \neq \emptyset$, $X \notin X$.
+	\paragraph{b} Si $A$ y $B$ son conjuntos no vacíos, entonces no es posible que ocurran simultáneamente que $A \in B$ y $B \in A$.
+	\paragraph{} Por el axioma del par consideraremos el conjunto $C = \{A, B\}$ tal que $A \in B$ y $B \in A$, luego $A$ y $C$ tienen un elemento en común: $B$, lo cual contradice el axioma de fundación, procediendo desde $B$ obtenemos el mismo resultado, lo cual concluye en que la proposición $A \in B$ y $B \in A$ es falsa, en particular para conjuntos no vacíos. Nótese, que el caso en el que $A = B$ se demuestra mediante el inciso (a).
+	\paragraph{18.}
+	
+	\paragraph{a)} Demuestre que para cualquier conjunto $X$ es falso que $\mathcal{P}(X) \subseteq X$. En particular $X \neq \mathcal{P}(X)$.
+	\paragraph{} Suponga que $\mathcal{P}(X) \subseteq X$ tal que $x \in \mathcal{P}(X)$, luego, existe un $A_n \in \mathcal{P}(X)$ y en particular por la definición del conunto potencia hay un $A_n = X$, luego
+	$$X \in \mathcal{P}(X) \land \mathcal{P}(X) \subseteq X$$
+	De lo anterior se sólo se puede concluir que $X=\mathcal{P}$, sin embargo por la definición del problema en particular $X \neq \mathcal{P}(X)$, por lo demostrado en el teorema 2.33 a, un conjunto no se puede contener a si mismo, por lo tanto no es cierto que $\mathcal{P}(X) \subseteq X$.
+	\paragraph{b)} Demuestre que el conjunto de todos los conjuntos no existe usando el insiso (a).
+	\paragraph{}Supongamos que dicho conjunto existe, luego por definición el conjunto de todos los conjuntos existe un $C$ que los contiene y por tanto, dado que $\mathcal{P}(C)$ es un conjunto, $\mathcal{P}(C) \subseteq C$, y por la definición del conjunto potencia $C \in \mathcal{P}(C)$, vemos que esta es la misma proposición que se demostró en el inciso (a) y por ende el conjunto de todos los conjuntos no existe.
+	\paragraph{20} El axioma de unión, el axioma del par, el axioma del conjunto potencia pueden reemplazarse por las siguientes versiones más débiles.
+	\paragraph{} Deduzca el axioma del par, el axioma de la unión y el axioma del conjunto potencia usando las versiones débiles. (Sugerencia: use el axioma esquema de comprensión).
+	\paragraph{Axioma débil del par.} Para cualesquiera $a, b$ existe un conjunto $C$ tal que $a \in C$ y $b \in C$.
+	\paragraph{Deducción del axioma del par.}
+	Es importante resaltar que la el axioma débil está definido con la conjunción, la cual para ser veradera, requiere que $a \in C$ y $b \in C$ sean verdaderas. No obstante, el valor de verdad para la disjunción es más flexible y solo basta con que $a \in C$ o $b \in C$ sean verdaderas, permitiendo que el axioma sea consistente para todo tipo de elementos en cualquier conjunto.
+	- Según el \textbf{Axioma débil del Par}, para cualquier $a,b$ existe un conjunto $C$ tal que $a \in C$ y
+	$b \in C$. Se definen las propiedades $P(b) := b \in C$.\\
+	- Por el axioma A3, para un conjunto $B$ existe un conjunto $C$ tal que $b \in C$ si y solo si $b \in B$ y $P(b)$,
+	es decir $b \in B$ y $b \in C$.\\
+	- Igualmente, considerese la propiedad $Q(a) := a \in C$.\\
+	Para el conjunto A existe un conjunto que
+	tambien puede ser C tal que $b \in C$ si y solo si $a \ A$ y $Q(a$), es decir $a \in A$ y $a \in C$.
+	- Por los dos pasos anteriores, se puede concluir que $C$ esta compuesto por dos elementos := $\{a, b\}$, es
+	decir, existe un conjunto $C$ donde $x \in C$ tal que $x = a$ o $x = b$, el cual corresponde al Axioma del Par.
+	\paragraph{Axioma débil de Unión.} Para cualquier conjunto $S$ existe un conjunto $U$ tal que si $x \in A$ y $A \in S$ entonces $x \in U$.
+	\paragraph{Deducción del axioma de la unión.} El axioma del conjunto débil permite que $U$ tenga elementos que no pertenecen a conjuntos que no estén en ninguno de los conjuntos $X \in S$, de modo que generalizamos este conjunto mediante el axioma esquema de comprensión como 
+	$$U:=\{x:x \in A , A \in S\}$$
+	por lo cual únicamente $x \in U$ si y sólo si $x$ está contenido en algún conjunto que pertenece a $S$.
+	\paragraph{Axioma débil del conjunto potencia.} Para cualquier conjunto $S$ existe un conjunto $P$ tal que $X \subseteq S$ implica $X \in P$.
+	\paragraph{Deducción del axioma del conjunto potencia.} De forma similar al axioma débil de la unión, el conjunto $P$ puede tener elementos que no pertenecen a $S$. Por ende, para tener su versión fuerte podemos reescribirla mediante el esquema de comprensión al conjunto $P$ como
+	$$P:=\{ X: X \subseteq S\}$$,
+	por lo cual unicamente $X \in S$ si y solo si $X \subseteq S$.
 \end{document}
