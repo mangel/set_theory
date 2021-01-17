@@ -1,0 +1,53 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, mexico]{babel}
+
+\title{Ejercicio Teoría de Conjuntos}
+\author{Miguel Angel Gomez Barrera}
+\institute{Fundación Universitaria Konrad Lorenz}
+\date{2020}
+
+\begin{document}
+	\frame{\titlepage}
+	\begin{frame}
+		\frametitle{Ejercicio}
+		Muestre que para cualquier conjunto $X$, $\bigcap \mathcal{P}(X) = \emptyset$.	
+	\end{frame}
+	\begin{frame}
+		\frametitle{Prueba.}
+		\begin{block}{}
+			La demostración es de manera directa, primero demostraremos que
+			\begin{block}{Propiedad}
+				Para todo conjunto $A$, $A \cap \emptyset = \emptyset.$
+			\end{block} 
+		\end{block}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Demostración de la propiedad.}
+		\begin{block}{Propiedad}
+			Para todo conjunto $A$, $A \cap \emptyset = \emptyset.$
+			\begin{proof}
+				Consideremos $x \in A \cap \emptyset$, por definición no pertenece al vacío y en general para todo $x \in A$ esto se cumple, luego $A \cap \emptyset = \emptyset$, aún si consideramos que $A = \emptyset$ por definición del conjunto vacío la intersección tampoco tendrá elementos.
+			\end{proof}
+		\end{block} 
+	\end{frame}
+	\begin{frame}
+		\frametitle{Un resultado adicional}
+		\begin{block}{Ejercicio}
+			$\{\emptyset\} \subseteq A$.
+			\begin{proof}
+				$\{\emptyset\} \subseteq A$. Suponga que no es así, que en $\emptyset$ hay algún $x \notin A$, ello es un contradicción dado que el vacío no tiene elementos, por lo tanto la proposición es verdadera.
+			\end{proof}
+		\end{block}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Prueba cont.}
+		\begin{block}{}
+			Muestre que para cualquier conjunto $X$, $\bigcap \mathcal{P}(X) = \emptyset$.	
+			\begin{proof}
+				Para todo conjunto $X$, $\emptyset \in \mathcal{P}(X)$, por las demostraciones anteriores vemos que $\bigcap \mathcal{P}(X) = \emptyset.$
+			\end{proof}
+		\end{block}
+	\end{frame}
+\end{document}

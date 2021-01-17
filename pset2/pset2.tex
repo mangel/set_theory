@@ -1,0 +1,30 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, mexico]{babel}
+
+\begin{document}
+\paragraph{2.} Suponiendo que $R$ es un conjunto, demuestre que los conjuntos definidos en el ejemplo $3.29$ existen.
+\paragraph{Ejemplo 3.29.} Recuerde que a una circunferencia en $R^2$ con centro en el punto $x \in R^2$ y radio $r > 0$, la podemos considerar como el conjunto $C(x,r) =\{y \in R^2: ||x - y|| = r \}$. Sea $E_x$ la familia de todas las circunferencias en $R^2$ con centro $x \in R^2$, es decir, $E_x = \{C(x,r): r > 0 \}$ y sea $\varepsilon = \{E_x: x \in R^2 \}$. Entonces $\varepsilon$ es un sistema de conjuntos cuyos elementos son familias de conjuntos. Note que ni los puntos de $R^2$, ni las circunferencias son elementos de $\varepsilon$.
+\paragraph{} Siguiendo la definición dada veremos cada uno de los conjuntos definidos: $C(x,r), E_x$ y $\varepsilon$.
+\paragraph{Sobre la existencia de $C(x,r)$ y $E_x$.} Supondremos la existencia de $x \in R^2$ y de $r$, por lo que dicho conjunto $R \neq \emptyset$, ahora utilizamos las definiciones dadas
+$$C(x,r) = \{y \in R^2: ||x-y||=r\},$$
+\paragraph{} vemos por tanto que $x$ e $y$ pertenecen al mismo conjunto($R^2$) y por tanto por lo menos existirá un $y=x$, sin embargo si ello es así tendremos que siempre $r=0$, lo cual no se permite por las definiciones dadas, como sabemos que $r$ existe y satisface la condición $(G(r):r>0)$, debe existir un $y \in R^2$ tal que para todo $x$, $||x-y|| = r \land G(r)$, si dichos elementos existen, $C(x,r)$ existe y como la condición $G(r)$ se satisface para algunos de sus elementos $E_x$ también existe.
+\paragraph{Sobre la existencia de $\varepsilon$.} Su construcción requiere de la existencia de $E_x$ y de que exista algúnn $x \in R^2$, sobre lo segundo, se garantiza mediante las primeras definiciones del problema y como vimos anteriormente la existencia de $x \in R^2$ es una condición necesaria también para la existencia de $E_x$, sinembargo,en el párrafo anterior vimos que $E_x$ existe, por lo tanto $\varepsilon$ existe.
+\paragraph{Ejemplos}
+$$C((1,1)) = \{(0,0),(0.5,0.5), \dots \},$$
+$$E_{(1,1)} = \{\{(0,0),(0.5,0.5), \dots \}\},$$
+$$\varepsilon = \{ E_{(1,1)}, E_{(0,0)}, \dots \}.$$
+\paragraph{Nota.}\textit{Nótese que estaríamos asumiendo que dichos elementos existen en $R$, lo cual necesariamente puede no ser así, lo hacemos de esta manera para ejemplificar.}
+
+\paragraph{4.} Muestre que para cualquier conjunto $X$, $\bigcap \mathcal{P}(X) = \emptyset$. 
+\paragraph{}La demostración es de manera directa, primero demostraremos que 
+\paragraph{4.a}Para todo conjunto $A$, $A \cap \emptyset = \emptyset.$
+\paragraph{Dem. 4.a} Consideremos $x \in A \cap \emptyset$, por definición no pertenece al vacío y en general para todo $x \in A$ esto se cumple, luego $A \cap \emptyset = \emptyset$, aún si consideramos que $A = \emptyset$ por definición del conjunto vacío la intersección tampoco tendrá elementos.
+	\paragraph{Dem 4.} Para todo conjunto $X$, $\emptyset \in \mathcal{P}(X)$, por \textit{Dem. 4.a.} vemos que $\bigcap \mathcal{P}(X) = \emptyset.$
+\end{document}

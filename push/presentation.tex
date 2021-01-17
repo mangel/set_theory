@@ -1,0 +1,62 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, mexico]{babel}
+
+\title{Ejercicio Teoría de Conjuntos II}
+\author{Miguel Angel Gomez Barrera}
+\institute{Fundación Universitaria Konrad Lorenz}
+\date{2020}
+
+\begin{document}
+	\frame{\titlepage}
+	\begin{frame}
+		\frametitle{Ejercicio}
+		Sean $X$ y $Y$ dos conjuntos en los cuales existe una función $f$ desde $P(X)$ a $P(Y)$, que a cada subconjunto $A$ de $X$ asigna una imagen del subconjunto $f(X)$ de $Y$. Y sea $f^{-1}$ el inverso de $f$, una función desde $P(Y)$ a $P(X)$, tal que $B$ es subconjunto de $Y$
+		Demostrar:
+		\begin{itemize}
+			\item Si $B \subset Y$, entonces $ f(f^{-1}(B))\subset B$.
+			\item Si $f$ va desde $X$ a $Y$, entonces $f(f^{-1}(B)) = B$.
+			\item Si $A \subset X$, entonces $A \subset f^{-1}(f(A))$.
+			\item Si $f$ es uno a uno entonces $A = f^{-1}(f(A))$.
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Demostración de la propiedad.}
+		Tener presente que $f^{-1} (B) = \{ x \in X: f(x) \in B\}$
+		\begin{block}{Propiedad}
+			Si $B \subset Y$, entonces $ f(f^{-1}(B))\subset B$.
+			\begin{proof}
+				Si $y \in f(f^{-1}(B))$, entonces $y= f(x)$ para algún $x$ en $f^{-1}(B)$, lo que implica que $y = f(x)$ y $f(x) \in B$ y por ende $y \in B$.
+			\end{proof}
+		\end{block} 
+	\end{frame}
+	\begin{frame}
+		\frametitle{Demostración de la propiedad.}
+		Tener presente que $f^{-1} (B) = \{ x \in X: f(x) \in B\}$
+		\begin{block}{Propiedad}
+			Si $f$ va desde $X$ a $Y$, entonces $f(f^{-1}(B)) = B$.
+			\begin{proof}
+				Si $y \in B$, entonces $y = f(x)$ para algún $x$ en $X$, y por tanto para algún $x$ en $f^{-1}(B)$; ello implica que $y \in f(f^{-1}(B))$.
+			\end{proof}
+		\end{block} 
+	\end{frame}
+	\begin{frame}
+		\frametitle{Demostración de la propiedad.}
+		\begin{block}{Propiedad}
+			Si $A \subset X$, entonces $A \subset f^{-1}(f(A))$.
+			\begin{proof}
+				Si $x \in A$, entonces $f(x) \in f(A)$; Lo que implica que $x \in f^{-1}(f(A))$.
+			\end{proof}
+		\end{block} 
+	\end{frame}
+	\begin{frame}
+		\frametitle{Demostración de la propiedad.}
+		\begin{block}{Propiedad}
+			Si $f$ es uno a uno entonces $A = f^{-1}(f(A))$.
+			\begin{proof}
+				Si $x \in f^{-1}(f(A))$, entonces $f(x) \in f(A)$ y por ende $f(x) = f(u)$ para algún $u$ en $A$; ello implica que $x = u$ y en consecuencia que $x \in A$.
+			\end{proof}
+		\end{block} 
+	\end{frame}
+\end{document}

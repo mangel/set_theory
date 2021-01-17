@@ -1,0 +1,36 @@
+\begin{filecontents*}{test2.bib}
+	@article{Carreo2014,
+		doi = {10.1016/j.rimni.2012.10.002},
+		url = {https://doi.org/10.1016/j.rimni.2012.10.002},
+		year = {2014},
+		month = jan,
+		publisher = {Scipedia,  S.L.},
+		volume = {30},
+		number = {1},
+		pages = {25--34},
+		author = {M.L. Carre{\~{n}}o and A.H. Barbat and O.D. Cardona},
+		title = {M{\'{e}}todo num{\'{e}}rico para la evaluaci{\'{o}}n hol{\'{\i}}stica del riesgo s{\'{\i}}smico utilizando la teor{\'{\i}}a de conjuntos difusos},
+		journal = {Revista Internacional de M{\'{e}}todos Num{\'{e}}ricos para C{\'{a}}lculo y Dise{\~{n}}o en Ingenier{\'{\i}}a}
+\end{filecontents*}
+
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, mexico]{babel}
+
+\usepackage{filecontents}
+\usepackage{natbib, hyperref}
+\usepackage{setspace}
+
+\title{Trabajo Bases de Datos: Método numérico para la evaluación holística del riesgo sísmico utilizando la teoría de conjuntos difusos.}
+\author{Miguel Angel Gómez Barrera}
+
+\begin{document}
+	\maketitle
+\doublespacing
+Los autores M.L Carreño, A.H. Barbat y O.D. Cardona, los tres investigadores en el area de riesgos, proponen un modelo basado en conjuntos difusos para determinar el riesgo sísmico en dos ciudades: Barcelona y Bogotá. Principalmente porque en algunos casos no es posible tener información completa y necesaria para un método más detallado, y a falta de esta información, se utilizan juicios de expertos. En el modelo se utiliza la idea de pertenencia al conjunto (el conjunto de riesgos), en base a un jucio experto y a una función que determina con un valor entre $[0, 1]$ la pertenencia, de esta manera se encuentran los valores que aportan al riesgo y se hace una predicción del nivel de riesgo. Los autores evalúan los resultados con un modelo con datos precisos y demuestran convergencia. Concluyen y advierten, en que hay un sesgo en el jucio de un experto y por ello estos modelos también lo tienen, sin embargo resaltan su utilidad. Esto es importante porque en un país como el nuestro, se necesitan tomar decisiones más acertadas que se traduzcan en mejores inversiones, una aproximación mas 'inteligente' a la solución de los problemas de nuestra sociedad, este tipo de modelos ayudaría a tener una idea general y en base a ello decidir en donde enfocar los esfuerzos y el presupuesto de la nación. Incluso, algunas de las ideas del artículo, podrían utilizarse para orientar la decisión de la carrera de una persona, o en dónde puede ser mejor adquirir una vivienda, en estos problemas no siempre es posible cuantificar los criterios y con estos modelos y algo de esfuerzo, podrían ser una opción.
+
+\bibliographystyle{plainnat}
+\bibliography{test2}
+
+\end{document}
